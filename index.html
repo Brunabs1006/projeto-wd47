@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="css/cabecalho.css">
     <link rel="stylesheet" href="css/cartao.css">
     <link rel="stylesheet" href="css/formNovoCartao.css">
+    <script src="js/script.js"></script>
+    
+    <style>
+      .layoutLinhas .cartao{width: 100%;}
+    </style>
     <title>Ceep</title>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <symbol id="iconeEditar" viewBox="0 0 384 384"><title>Editar</title><path fill="rgba(0,0,0,.5)" d="M378 86l-39 39-80-80 39-39q6-6 15-6t15 6l50 50q6 6 6 15t-6 15zM0 304L236 68l80 80L80 384H0v-80z"/></symbol>
@@ -26,9 +31,7 @@
       </h1>
       <div class="opcoesDaPagina">
         <input type="search" placeholder="busca" id="busca" class="opcoesDaPagina-opcao">
-        <button id="btnMudaLayout" class="opcoesDaPagina-opcao opcoesDaPagina-botao">
-          Linhas
-        </button>
+        <button id="btnMudaLayout" class="opcoesDaPagina-opcao opcoesDaPagina-botao" >Linhas</button>
         <button id="btnAjuda" class="opcoesDaPagina-opcao opcoesDaPagina-botao">
           ?
         </button>
@@ -49,7 +52,7 @@
  
       <article id="cartao_1" class="cartao">
         <div class="opcoesDoCartao">
-          <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0">
+          <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0" onClick="this.parentNode.parentNode.remove()">
             <svg><use xlink:href="#iconeRemover"></use></svg>
           </button>
 
@@ -77,7 +80,7 @@
       </article>
       <article id="cartao_2" class="cartao">
         <div class="opcoesDoCartao">
-          <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0">
+          <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0" onClick="this.parentNode.parentNode.remove()">
             <svg><use xlink:href="#iconeRemover"></use></svg>
           </button>
 
@@ -105,7 +108,7 @@
       </article>
       <article id="cartao_3" class="cartao">
         <div class="opcoesDoCartao">
-          <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0">
+          <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0" onClick="this.parentNode.parentNode.remove()">
             <svg><use xlink:href="#iconeRemover"></use></svg>
           </button>
 
