@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="css/cabecalho.css">
     <link rel="stylesheet" href="css/cartao.css">
     <link rel="stylesheet" href="css/formNovoCartao.css">
-    <script src="js/script.js"></script>
     
+    
+
     <style>
       .layoutLinhas .cartao{width: 100%;}
     </style>
@@ -30,12 +31,12 @@
         Ceep
       </h1>
       <div class="opcoesDaPagina">
-        <input type="search" placeholder="busca" id="busca" class="opcoesDaPagina-opcao">
-        <button id="btnMudaLayout" class="opcoesDaPagina-opcao opcoesDaPagina-botao" >Linhas</button>
-        <button id="btnAjuda" class="opcoesDaPagina-opcao opcoesDaPagina-botao">
+        <input type="search" placeholder="busca" id="busca" class="opcoesDaPagina-opcao no-js">
+        <button id="btnMudaLayout" class="opcoesDaPagina-opcao opcoesDaPagina-botao no-js" >Linhas</button>
+        <button id="btnAjuda" class="opcoesDaPagina-opcao opcoesDaPagina-botao no-js">
           ?
         </button>
-        <button id="btnSync" class="opcoesDaPagina-opcao opcoesDaPagina-botao botaoSync botaoSync--sincronizado">
+        <button id="btnSync" class="opcoesDaPagina-opcao opcoesDaPagina-botao botaoSync botaoSync--sincronizado no-js">
           <svg class="botaoSync-icone">
             <use xlink:href="#iconeSincronizar"></use>
           </svg>
@@ -43,7 +44,7 @@
       </div>
     </header>
 
-    <form class="formNovoCartao container">
+    <form class="formNovoCartao container no-js">
       <textarea class="formNovoCartao-conteudo" name="formNovoCartao-conteudo" placeholder="Digite aqui"></textarea>
       <input class="formNovoCartao-salvar" type="submit" value="Salvar">
     </form>
@@ -52,7 +53,7 @@
  
       <article id="cartao_1" class="cartao">
         <div class="opcoesDoCartao">
-          <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0" onClick="this.parentNode.parentNode.remove()">
+          <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0" >
             <svg><use xlink:href="#iconeRemover"></use></svg>
           </button>
 
@@ -80,7 +81,7 @@
       </article>
       <article id="cartao_2" class="cartao">
         <div class="opcoesDoCartao">
-          <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0" onClick="this.parentNode.parentNode.remove()">
+          <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0" >
             <svg><use xlink:href="#iconeRemover"></use></svg>
           </button>
 
@@ -108,7 +109,7 @@
       </article>
       <article id="cartao_3" class="cartao">
         <div class="opcoesDoCartao">
-          <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0" onClick="this.parentNode.parentNode.remove()">
+          <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" tabindex="0" >
             <svg><use xlink:href="#iconeRemover"></use></svg>
           </button>
 
@@ -138,4 +139,7 @@
     </section>
     
   </body>
+  
+  <script src="js/mudaLayout.js"></script>
+  <script src="js/remove.js"></script>
 </html>
