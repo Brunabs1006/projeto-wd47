@@ -23,7 +23,9 @@
 	z-index: 2;
 }
 
-/*.cartao .opcoesDoCartao-opcao {
+
+
+/*z.cartao .opcoesDoCartao-opcao {
 	opacity: 0;
 	transition: opacity .2s ease;
 }

@@ -26,6 +26,16 @@
 	text-indent: -99999px;
 }
 
+.cartao .opcoesDoCartao-opcao{
+	opacity: 0;
+	transition: opacity .5s;
+}
+
+.cartao--focado .opcoesDoCartao-opcao,
+.cartao:hover .opcoesDoCartao-opcao{
+	opacity: 1;
+}
+
 .opcoesDoCartao-opcao:first-child {
 	margin-right: .5em;
 }
