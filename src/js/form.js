@@ -23,7 +23,6 @@
            })
            form.insertBefore(msgErro, btnSubmit)
         }else{
-            
             window.adicionaCartaoNoMural({conteudo:textArea.value})
         }
 
